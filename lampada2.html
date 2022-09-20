@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function ligarDesliga(){
+
+            var imagem = document.getElementById('lamp');
+            var imagem_desligado = "img/pic_bulboff.gif";
+            var imagem_ligado = "img/pic_bulbon.gif";
+            
+            if(imagem.src.includes(imagem_ligado)){
+                document.getElementById('lamp').src = imagem_desligado;
+            }else{
+                document.getElementById('lamp').src = imagem_ligado;
+            }
+        }
+        
+    </script>
+</head>
+<body>  
+    <button onclick=ligarDesliga() >Clique</button>
+
+    <img id="lamp" src="img/pic_bulboff.gif" style="width: 100px;">
+
+    
+</body>
+</html>

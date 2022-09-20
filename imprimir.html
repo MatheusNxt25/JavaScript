@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="js/meuScript.js"></script>
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "MUDOU mas continua sendo PARAGRAFO";
+        }
+    </script>
+</head>
+<body>
+    
+    <h2>JavaSript no Head e no Body </h2>
+    <p id="demo">Aqui vai o texto que quero demo no P</p>
+    <button type="button" onclick="myFunction()">TROCAR</button>
+    <br><br>
+    __________________________________________________________________ 
+
+    <br><br><br>
+    <label id="demo2">Aqui DEMO 2 no LABEL</label>
+    <button type="button" onclick="myFunction2()">CLIQUE</button>
+    <br><br>
+
+    __________________________________________________________________ 
+
+    <br><br>
+    <div id="demo3">Do arquivo DEMO 3 no DIV</div>
+    <button type="button" onclick="myFunctionFile()">CLIQUE</button>
+    <br><br>
+
+    __________________________________________________________________ 
+
+    <br><br>
+    <button onclick="window.print()">Essa é a função de IMPRIMIR</button>
+
+    <script>
+        function myFunction2() {
+            document.getElementById('demo2').innerHTML = "Mudou o demo 2 MAS ainda é LABEL";
+        }
+    </script>
+
+</body>
+</html>
